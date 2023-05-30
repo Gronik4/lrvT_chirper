@@ -1,0 +1,17 @@
+{
+    "name": "gronw/lrv-t_chirper",
+    "description": "фреймворк Laravel - Пробный проект из документации.",
+    "autoload": {
+        "psr-4": {
+            "Gronw\\LrvTChirper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gronik4",
+            "email": "golegni@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

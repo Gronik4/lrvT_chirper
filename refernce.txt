@@ -1,0 +1,29 @@
+Все домашки по Laravel: https://github.com/netology-code/lrv-homeworks/tree/lrv-3/
+Дз №2 по блоку Laravel: https://github.com/netology-code/lrv-homeworks/tree/lrv-3/002-basics
+ДЗ №1: https://github.com/netology-code/lrv-homeworks/tree/lrv-3/001-intro
+ДЗ №3: https://github.com/netology-code/lrv-homeworks/blob/lrv-3/003-middleware
+ДЗ №4: https://github.com/netology-code/lrv-homeworks/tree/lrv-3/004-rest
+
+Официальная документация:https://laravel.com/
+На русском:https://laravel.su/
+На русском, но хуже:https://laravel.ru/
+еще:   https://laravel.com/docs/10.x/blade#components
+Пример: https://laravel.com/
+
+
+{chirp.user.id === auth.user.id &&
+  <Dropdown>
+    <Dropdown.Trigger>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+        </svg>
+      </button>
+    </Dropdown.Trigger>
+    <Dropdown.Content>
+      <button className="block w-full px-4 py-2 text-left text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 transition duration-150 ease-in-out" onClick={() => setEditing(true)}>
+        Edit
+    </button>
+    </Dropdown.Content>
+  </Dropdown>
+}
