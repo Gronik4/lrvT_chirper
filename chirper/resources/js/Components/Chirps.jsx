@@ -15,7 +15,7 @@ export default function Chirps({chirp}) {
   const { data, setData, patch, clearErrors, reset, errors } = useForm({ message: chirp.message, });
 
   const submit = (e)=> {
-    e,preventDefault();
+    e.preventDefault(); // здесь, если после е - запятая - не работает!!
     patch(route('chirps.update', chirp.id), { onSuccess: ()=> setEditing(false)});
   }
   return (
@@ -43,6 +43,7 @@ export default function Chirps({chirp}) {
                 <button className='block w-full px-4 py-2 text-left text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 transition duration-150 ease-in-out' onClick={()=> setEditing(true)}>
                   Edit
                 </button>
+                <Dropdown.Link as="button" href={route('chirps.destroy', chirp.id)} method="delete">Удалить</Dropdown.Link>
               </Dropdown.Content>
             </Dropdown>
           }

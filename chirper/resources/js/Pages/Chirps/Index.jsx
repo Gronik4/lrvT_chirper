@@ -8,8 +8,8 @@ import React from 'react'
 export default function Index({auth, chirps}) {
   const { data, setData, post, processing, reset, errors } = useForm({message: '',});
   const submit = (e)=> {
-    e.preventDefault();
-    post(route('chirps.store', { onSuccecc: ()=> reset()}))
+    //e.preventDefault(); // Иначе страничка не перезагружется, в инпуте остаются данные
+    post(route('chirps.store'), { onSuccecc: ()=> reset()})
   }
   return (
     <AuthenticatedLayoute user={auth.user}>
@@ -23,7 +23,7 @@ export default function Index({auth, chirps}) {
             onChange={e=> setData('message', e.target.value)}
           ></textarea>
           <InputError message={errors.message} className='mt-2'/>
-          <PrimaryButton className='mt-4' disabled={processing}>Отправить</PrimaryButton>
+          <PrimaryButton className='mt-4'>Отправить</PrimaryButton>
         </form>
         <div className='mt-6 bg-white shadow-sm rounded-lg divide-y'>
           {chirps.map(chirp=>
