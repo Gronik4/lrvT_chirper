@@ -8,7 +8,7 @@
 На русском:https://laravel.su/
 На русском, но хуже:https://laravel.ru/
 еще:   https://laravel.com/docs/10.x/blade#components
-Пример: https://laravel.com/
+Пример: https://bootcamp.laravel.com/
 
 
 {chirp.user.id === auth.user.id &&
